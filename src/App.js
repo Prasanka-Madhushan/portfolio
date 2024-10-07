@@ -1,23 +1,56 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
+import Typed from 'typed.js';
 import './App.css';
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
+  useEffect(() => {
+    // ScrollReveal
+    const sr = ScrollReveal({
+      reset: true,
+      distance: '80px',
+      duration: 2000,
+      delay: 200,
+    });
+
+    sr.reveal('.home-content, .heading', { origin: 'top' });
+    sr.reveal('.home-img, .services-container, .Projects-box, .contact-form, .skill', { origin: 'bottom' });
+    sr.reveal('.home-content h1, .about-img', { origin: 'left' });
+    sr.reveal('.home-content p, .about-content', { origin: 'right' });
+
+    // Typed.js
+    const options = {
+      strings: ['Web Developer', 'UI/UX Designer', 'Mobile Developer'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    };
+
+    const typed = new Typed('.multiple-text', options);
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }
