@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="about-img">
-        <img src="https://i.ibb.co/hdDnxSW/profile-pic.png" alt="prasa" />
+        <img src="https://i.ibb.co/x8G49q7/profile-pic.png" alt="prasa" />
       </div>
       <div className="about-content">
         <input id="ch" type="checkbox" />
