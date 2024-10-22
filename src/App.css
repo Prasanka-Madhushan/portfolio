@@ -533,7 +533,7 @@ label:hover {
     margin: .3rem 0 1rem;
 }
 
-.Projects-layer a {
+/* .Projects-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -550,6 +550,16 @@ label:hover {
 
 .Projects-layer a:hover {
     background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+} */
+
+.github-icon {
+    margin-top: 10px;
+    color: #000; /* White GitHub icon */
+    transition: color 0.3s ease;
+}
+  
+.github-icon:hover {
+    color: #f0f0f0; /* Lighter color on hover */
 }
 
 /*Contact Section*/
