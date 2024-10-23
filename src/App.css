@@ -649,7 +649,8 @@ label:hover {
 
     .theme-btn {
         display: flex;
-        margin-top: 10%;
+        margin-top: 0;
+        margin-right: 10%;
     }
 
     section {
@@ -684,7 +685,9 @@ label:hover {
     }
 
     .theme-btn {
-        display: none;
+        display: flex;
+        margin-top: 0;
+        margin-right: 10%;
     }
 
     .navbar {
