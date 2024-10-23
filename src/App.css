@@ -294,7 +294,6 @@ label:hover {
 .experience-section {
     background: var(--bg-color);
     color: var(--text-color);
-    padding: 60px 20px;
 }
 
 /* Timeline Styling */
@@ -319,9 +318,7 @@ label:hover {
     padding: 20px;
     position: relative;
     width: 50%;
-    opacity: 0;
-    /* Start invisible */
-    transition: opacity 0.3s ease;
+    
 }
 
 .timeline-item.left {
@@ -344,6 +341,16 @@ label:hover {
     right: auto;
     left: -125px;
 }
+
+/* Image Styling */
+.timeline-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    display: block;
+  }
 
 .experience-box {
     background-color: var(--second-bg-color);

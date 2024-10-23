@@ -6,6 +6,7 @@ const Experience = () => {
       role: "Backend Developer",
       company: "LiveRoom Technologies",
       period: "June 2024 - Present",
+      image: "https://i.ibb.co/ctvBZTx/profile-pic-2.png",
       description: [
         "Developing and maintaining scalable web applications using React.js and other modern web technologies.",
         "Collaborating closely with designers, product managers, and engineering teams to deliver high-quality user experiences.",
@@ -18,6 +19,7 @@ const Experience = () => {
       role: "MERN-Stack Developer",
       company: "LiveRoom Technologies",
       period: "June 2024 - Present",
+      image: "https://i.ibb.co/ctvBZTx/profile-pic-2.png",
       description: [
         "Develop and manage both client-side and server-side components using the MERN stack (React for front-end, Node.js and Express for backend, MongoDB for database).",
         "Ensure that the platform is scalable and high-performance while maintaining excellent code quality.",
@@ -28,6 +30,7 @@ const Experience = () => {
         role: "Frontend Developer",
         company: "LiveRoom Technologies",
         period: "June 2024 - Present",
+        image: "https://i.ibb.co/ctvBZTx/profile-pic-2.png",
         description: [
           "Developing and maintaining scalable web applications using React.js and other modern web technologies.",
           "Collaborating closely with designers, product managers, and engineering teams to deliver high-quality user experiences.",
@@ -47,6 +50,7 @@ const Experience = () => {
         {experiences.map((exp, index) => (
           <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
             <div className="experience-box">
+            <img src={exp.image} alt={`${exp.role} logo`} className="timeline-image" />
               <h3>{exp.role}</h3>
               <h4>{exp.company}</h4>
               <ul>
