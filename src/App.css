@@ -12,17 +12,25 @@
 }
 
 :root {
-    --bg-color: #1b1f29;         /* Dark navy blue */
-    --second-bg-color: #2a2f3a;  /* Dark slate gray */
-    --text-color: #e4e6eb;       /* Soft white */
-    --main-color: #4ecdc4;       /* Light turquoise */
+    --bg-color: #1b1f29;
+    /* Dark navy blue */
+    --second-bg-color: #2a2f3a;
+    /* Dark slate gray */
+    --text-color: #e4e6eb;
+    /* Soft white */
+    --main-color: #4ecdc4;
+    /* Light turquoise */
 }
 
 .light-mode {
-    --bg-color: #e1e5f2;        /* Very light gray */
-    --second-bg-color: #ffffff; /* Pure white */
-    --text-color: #333333;      /* Dark gray */
-    --main-color: #ff6b6b;      /* Vibrant coral red */
+    --bg-color: #e1e5f2;
+    /* Very light gray */
+    --second-bg-color: #ffffff;
+    /* Pure white */
+    --text-color: #333333;
+    /* Dark gray */
+    --main-color: #ff6b6b;
+    /* Vibrant coral red */
 }
 
 html {
@@ -282,15 +290,135 @@ label:hover {
     box-shadow: none;
 }
 
+/* General Section Styling for Experience */
+.experience-section {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 60px 20px;
+}
+
+/* Timeline Styling */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--main-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    /* Start invisible */
+    transition: opacity 0.3s ease;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-date {
+    position: absolute;
+    top: 20px;
+    right: -125px;
+    font-size: 14px;
+    color: #999;
+}
+
+.timeline-item.left .timeline-date {
+    right: auto;
+    left: -125px;
+}
+
+.experience-box {
+    background-color: var(--second-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experience-box h3 {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experience-box h4 {
+    color: var(--main-color);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.experience-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience-box ul li {
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .timeline-item {
+        width: 100%;
+        left: 0;
+    }
+
+    .timeline-item.right {
+        left: 0;
+    }
+
+    .timeline-date {
+        position: relative;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .timeline::after {
+        left: 30px;
+    }
+
+    .timeline-item::after {
+        left: 30px;
+        right: auto;
+    }
+}
+
 
 /*Skills Section*/
+.services{
+    background-color: var(--second-bg-color);
+}
+
 .skill {
     width: 950px;
     margin: 10px auto;
     color: var(--text-color);
     padding: 20px;
     border-radius: 2rem;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -467,7 +595,7 @@ label:hover {
 
 /*Projets Section*/
 .Projects {
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .Projects h2 {
@@ -484,7 +612,7 @@ label:hover {
 .Projects-container .Projects-box {
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
+    box-shadow: 0 0 1rem var(--second-bg-color);
     overflow: hidden;
     display: flex;
 }
@@ -552,15 +680,20 @@ label:hover {
 
 .github-icon {
     margin-top: 10px;
-    color: #000; /* White GitHub icon */
+    color: #000;
+    /* White GitHub icon */
     transition: color 0.3s ease;
 }
-  
+
 .github-icon:hover {
-    color: #f0f0f0; /* Lighter color on hover */
+    color: #f0f0f0;
+    /* Lighter color on hover */
 }
 
 /*Contact Section*/
+.contact{
+    background-color: var(--second-bg-color);
+}
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -584,7 +717,7 @@ label:hover {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -609,7 +742,7 @@ label:hover {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text p {
