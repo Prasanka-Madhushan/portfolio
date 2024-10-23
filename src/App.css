@@ -12,18 +12,17 @@
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
-    /*--main-color:#0ef;*/
-    --main-color: #ffda6b;
+    --bg-color: #1b1f29;         /* Dark navy blue */
+    --second-bg-color: #2a2f3a;  /* Dark slate gray */
+    --text-color: #e4e6eb;       /* Soft white */
+    --main-color: #4ecdc4;       /* Light turquoise */
 }
 
 .light-mode {
-    --bg-color: #8D99AE;
-    --second-bg-color: #fff;
-    --text-color: #000;
-    --main-color: #087e8b;
+    --bg-color: #e1e5f2;        /* Very light gray */
+    --second-bg-color: #ffffff; /* Pure white */
+    --text-color: #333333;      /* Dark gray */
+    --main-color: #ff6b6b;      /* Vibrant coral red */
 }
 
 html {
@@ -284,7 +283,7 @@ label:hover {
 }
 
 
-/*Services Section*/
+/*Skills Section*/
 .skill {
     width: 950px;
     margin: 10px auto;
@@ -329,7 +328,7 @@ label:hover {
 .bar span {
     height: 20px;
     float: left;
-    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+    background: linear-gradient(135deg, rgba(72, 85, 204, 1) 0%, rgb(255, 255, 255) 100%);
 }
 
 .html {

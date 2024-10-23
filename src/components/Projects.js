@@ -7,7 +7,7 @@ const Projects = () => {
       <h2 className="heading">Latest <span>Projects</span></h2>
       <div className="Projects-container">
         <div className="Projects-box">
-          <img src="https://i.ibb.co/GPnnp2R/web.jpg" alt="SignSavvy" />
+          <img src="https://i.ibb.co/x7KF3fr/signsavy.jpg" alt="SignSavvy" />
           <div className="Projects-layer">
             <h4>Sign Savvy</h4>
             <p><b>Technologies Used:</b> <br></br>Flutter, Firebase, ML
@@ -18,7 +18,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="Projects-box">
-          <img src="https://i.ibb.co/8KtMrJd/mobile.jpg" alt="Dental Website" />
+          <img src="https://i.ibb.co/sFS7V58/dental.jpg" alt="Dental Website" />
           <div className="Projects-layer">
             <h4>Dental Website</h4>
             <p><b>Technologies Used:</b> <br></br>React.js, Tailwind.css, Node.js, MongoDB
@@ -29,7 +29,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="Projects-box">
-          <img src="https://i.ibb.co/1JfWrrH/c.jpg" alt="CRUD Functionality" />
+          <img src="https://i.ibb.co/0cPmsbW/py.jpg" alt="CRUD Functionality" />
           <div className="Projects-layer">
             <h4>CRUD Functionality</h4>
             <p><b>Technologies Used:</b> <br></br>HTML, CSS, EJS, Node.js, MongoDB
@@ -40,7 +40,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="Projects-box">
-          <img src="https://i.ibb.co/qDY7S9J/java.jpg" alt="Market System" />
+          <img src="https://i.ibb.co/0jLWTk1/market.jpg" alt="Market System" />
           <div className="Projects-layer">
             <h4>Market System</h4>
             <p><b>Technologies Used:</b> <br></br>C#
@@ -51,7 +51,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="Projects-box">
-          <img src="https://i.ibb.co/0cPmsbW/py.jpg" alt="Hospital Website" />
+          <img src="https://i.ibb.co/4pwQ04j/hospital.jpg" alt="Hospital Website" />
           <div className="Projects-layer">
             <h4>Hospital Website</h4>
             <p><b>Technologies Used:</b> <br></br>React.js, Tailwind.css, Node.js, MongoDB
@@ -62,7 +62,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="Projects-box">
-          <img src="https://i.ibb.co/dBxSwR0/react.jpg" alt="Burger Hut Website" />
+          <img src="https://i.ibb.co/cQ9wqBQ/burger.jpg" alt="Burger Hut Website" />
           <div className="Projects-layer">
             <h4>Burger Hut Website</h4>
             <p><b>Technologies Used:</b> <br></br>HTML, CSS
@@ -73,7 +73,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="Projects-box">
-          <img src="https://i.ibb.co/0cPmsbW/py.jpg" alt="Weatherapp" />
+          <img src="https://i.ibb.co/74MftNC/weather.jpg" alt="Weatherapp" />
           <div className="Projects-layer">
             <h4>Weather App</h4>
             <p><b>Technologies Used:</b> <br></br>HTML, CSS, JS
@@ -84,7 +84,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="Projects-box">
-          <img src="https://i.ibb.co/GPnnp2R/web.jpg" alt="Eye Control Mouse Pointer" />
+          <img src="https://i.ibb.co/483LR6m/Mouse.jpg" alt="Eye Control Mouse Pointer" />
           <div className="Projects-layer">
             <h4>Eye Mouse Pointer</h4>
             <p><b>Technologies Used:</b> <br></br>Python
@@ -95,7 +95,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="Projects-box">
-          <img src="https://i.ibb.co/1JfWrrH/c.jpg" alt="Python" />
+          <img src="https://i.ibb.co/m6g4H6J/cal.jpg" alt="Python" />
           <div className="Projects-layer">
             <h4>Calculator</h4>
             <p><b>Technologies Used:</b> <br></br>Python
