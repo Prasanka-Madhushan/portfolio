@@ -318,7 +318,7 @@ label:hover {
     padding: 20px;
     position: relative;
     width: 50%;
-    
+
 }
 
 .timeline-item.left {
@@ -350,7 +350,7 @@ label:hover {
     object-fit: cover;
     margin-bottom: 15px;
     display: block;
-  }
+}
 
 .experience-box {
     background-color: var(--second-bg-color);
@@ -415,7 +415,7 @@ label:hover {
 
 
 /*Skills Section*/
-.services{
+.services {
     background-color: var(--second-bg-color);
 }
 
@@ -697,10 +697,135 @@ label:hover {
     /* Lighter color on hover */
 }
 
-/*Contact Section*/
-.contact{
-    background-color: var(--second-bg-color);
+/* Testimonials Section */
+.testimonials {
+    background: var(--second-bg-color);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20rem;
 }
+
+.testimonials .heading {
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 80px;
+}
+
+/* .testimonials .subheading {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #dddddd;
+  } */
+
+/* Testimonial Card */
+.testimonial-card {
+    max-width: 800px;
+    background-color: var(--bg-color);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonial Content */
+.testimonial-content {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    position: relative;
+}
+
+.testimonial-content::before,
+.testimonial-content::after {
+    content: '“';
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+}
+
+.testimonial-content::before {
+    top: -20px;
+    left: -20px;
+}
+
+.testimonial-content::after {
+    bottom: -20px;
+    right: -20px;
+    content: '”';
+}
+
+/* Testimonial Author */
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.testimonial-author img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.author-details {
+    text-align: left;
+}
+
+.author-details h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.author-details p {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-card {
+        padding: 20px;
+        max-width: 500px;
+    }
+
+    .testimonial-content {
+        font-size: 16px;
+    }
+
+    .testimonial-author img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .author-details h4 {
+        font-size: 20px;
+    }
+
+    .author-details p {
+        font-size: 14px;
+    }
+}
+
+
+/*Contact Section*/
+.contact {
+    background-color: var(--bg-color);
+}
+
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -724,7 +849,7 @@ label:hover {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -749,7 +874,7 @@ label:hover {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
 }
 
 .footer-text p {
